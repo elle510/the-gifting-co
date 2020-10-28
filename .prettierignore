@@ -1,0 +1,4 @@
+package.json
+babel.config.json
+*.config.js
+.babelrc
