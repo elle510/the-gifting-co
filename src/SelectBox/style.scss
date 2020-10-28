@@ -1,0 +1,33 @@
+.tgc-selectbox {
+    // InputComponent
+    .tgc-input-component {
+        display: flex;
+        cursor: pointer;
+        border-color: rgb(204, 204, 204);
+        border-radius: 4px;
+        border-style: solid;
+        border-width: 1px;
+
+        .tgc-input-value {
+            // position: absolute;
+            // top: 50%;
+            padding: 2px 8px;
+        }
+
+        .tgc-input-divider {
+            height: 100%;
+            border: solid;
+            border-width: thin;
+            border-color: rgb(204, 204, 204);
+        }
+        .tgc-input-arrow {
+            text-align: center;
+            padding: 5px 10px;
+        }
+    }
+}
+
+.tgc-select-menu {
+    position: absolute;
+    z-index: 1200;
+}
