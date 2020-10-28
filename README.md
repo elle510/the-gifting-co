@@ -1,10 +1,10 @@
-## 한글과 컴퓨터 과제
+## 더기프팅컴퍼니 과제
 
 ### 과제실행 방법
 
 1. nodejs 설치 [[링크](https://nodejs.org/ko/)]
 
-2. hancom-test 디렉토리 안에서 콘솔창을 열고 아래 명령어 실행
+2. the-gifting-co 디렉토리 안에서 콘솔창을 열고 아래 명령어 실행
 
 ```shell
 $ npm install   # node module 설치
