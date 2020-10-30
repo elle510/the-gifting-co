@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 class InputComponent extends Component {
     static propTypes = {
+        label: PropTypes.string,
         // items: PropTypes.array,
         width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
         height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
@@ -35,9 +36,21 @@ class InputComponent extends Component {
         }
     };
 
-    render() {
-        const { width, height } = this.props;
+    renderArrow = () => {
+        const { disabled, readOnly } = this.props;
         const { open } = this.state;
+
+        let arrow = '∨';
+        if (disabled || readOnly) {
+            return arrow;
+        }
+
+        arrow = open ? '∧' : '∨';
+        return arrow;
+    };
+
+    render() {
+        const { label, width, height } = this.props;
 
         return (
             <div className="tgc-input-component" style={{ width, height }} onClick={this.onClick}>
@@ -45,13 +58,12 @@ class InputComponent extends Component {
                     className="tgc-input-value"
                     style={{ width: `calc(${width}${typeof width === 'number' ? 'px' : ''} - 30px)` }}
                 >
-                    값
+                    {label}
                 </div>
                 <div className="tgc-input-divider" />
                 <div className="tgc-input-arrow" style={{ width: 30 }}>
-                    {open ? '∧' : '∨'}
+                    {this.renderArrow()}
                 </div>
-                {/** ∧ */}
             </div>
         );
     }
