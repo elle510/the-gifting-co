@@ -24,5 +24,3 @@ $ npm start     # webpack 실행
 4. 웹브라우저를 열고 아래 url 입력한다.
 
 > http://localhost:8080 에서 확인
-
-5. test()
