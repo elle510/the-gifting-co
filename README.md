@@ -25,4 +25,4 @@ $ npm start     # webpack 실행
 
 > http://localhost:8080 에서 확인
 
-5. test
+5. test()
